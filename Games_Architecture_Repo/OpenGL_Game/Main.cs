@@ -1,0 +1,23 @@
+﻿using System;
+using OpenGL_Game.Managers;
+// when running the game to run the game with the server the batch file in the 
+namespace OpenGL_Game
+{
+#if WINDOWS || LINUX
+    /// <summary>
+    /// The main class.
+    /// </summary>
+    public static class MainEntry
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            using (var game = new SceneManager())
+                game.Run();
+        }
+    }
+#endif
+}

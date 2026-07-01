@@ -1,0 +1,13 @@
+{
+  "MouseSensitivity": 0.0025,
+  "MoveSpeed": 3.0,
+  "MaxLives": 3,
+  "DroneSpeed": 1.4,
+  "DroneTouchDistance": 0.75,
+  "DroneDisableDuration": 5.0,
+  "WeaponRange": 8.0,
+  "WeaponHitRadius": 0.65,
+  "BaseDroneHealth": 3,
+  "BirdseyeFovDegrees": 103.0,
+  "NormalFovDegrees": 103.0
+}
