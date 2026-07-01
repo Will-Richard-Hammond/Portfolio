@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.db
+*.sqlite
+*.mdf
+*.ldf
+*.bak
+*.mp4
+*.mov
+*.avi
+*.webm
+.env
+appsettings.Development.json
