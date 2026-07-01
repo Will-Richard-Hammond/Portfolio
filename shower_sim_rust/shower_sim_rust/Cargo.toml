@@ -1,0 +1,8 @@
+[package]
+name = "shower_sim_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+glium = { version = "0.36", features = ["simple_window_builder"] }

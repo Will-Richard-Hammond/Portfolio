@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{51FF03FB-774C-4B48-A757-90D548525E48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Documentation\Source Files">
+      <UniqueIdentifier>{8C9C3C0A-8997-4E64-9109-190C9C52A751}</UniqueIdentifier>
+      <Extensions>cu;cuh;cpp;c;cxx;h;hpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\main.cu">
+      <Filter>Documentation\Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="build.bat">
+      <Filter>Documentation</Filter>
+    </None>
+  </ItemGroup>
+</Project>
