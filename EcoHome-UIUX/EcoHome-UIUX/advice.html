@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoHome — Efficiency Advice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav aria-label="Primary" class="nav">
+      <h1 class="brand">EcoHome</h1>
+      <ul class="nav-list" role="list">
+        <li><a href="index.html">Dashboard🏠</a></li>
+        <li><a href="devices.html">Devices📱</a></li>
+        <li><a aria-current="page" href="advice.html">Advice🗣️</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="section-head">
+        <h2>Home Efficiency Advice</h2>
+        <p class="section-sub">Practical tips to reduce electricity and water consumption.</p>
+      </div>
+
+      <!-- Quick wins -->
+      <div class="tips-grid" role="region" aria-label="Quick wins">
+        <article class="card">
+          <h3 class="card-title">Quick Wins🏃</h3>
+          <ul class="tips">
+            <li>Turn appliances fully off — avoid standby.</li>
+            <li>Set heating thermostat 1°C lower if comfortable.</li>
+            <li>Shorter showers (aim for 4–5 minutes).</li>
+            <li>Only run washing machine/dishwasher with full loads.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Low Cost💸</h3>
+          <ul class="tips">
+            <li>Swap to LED bulbs (warm/neutral white as preferred).</li>
+            <li>Fit aerators to taps and efficient shower heads.</li>
+            <li>Use draft excluders on doors/windows.</li>
+            <li>Add thermostatic radiator valves (TRVs) if possible.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Electricity advice -->
+      <div class="callout" role="note" aria-label="Electricity advice note">
+        <strong>Electricity⚡</strong> · Focus on heating, hot water, lighting, and heavy appliances.
+      </div>
+
+      <details class="accordion" open>
+        <summary><h3>Heating & Hot Water🔥</h3></summary>
+        <ul class="tips">
+          <li>Schedule heating for occupancy; avoid heating empty rooms.</li>
+          <li>Bleed radiators and keep them unblocked (no furniture in front).</li>
+          <li>Lower hot water temperature to a safe but efficient setting (e.g., ~50–55°C at tap).</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Lighting💡</h3></summary>
+        <ul class="tips">
+          <li>Use LEDs throughout; switch off when leaving rooms.</li>
+          <li>Maximise daylight; keep fixtures and shades clean.</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Appliances & Standby🔌</h3></summary>
+        <ul class="tips">
+          <li>Unplug chargers and use smart power strips to cut standby draw.</li>
+          <li>Fridge/freezer: good door seals, correct temps (~4°C / −18°C), allow airflow behind.</li>
+          <li>Air-dry clothes when possible; clean lint filters to improve dryer efficiency.</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Cooking🍲 & Laundry👕</h3></summary>
+        <ul class="tips">
+          <li>Put lids on pans; match hob size to pan size; batch-cook.</li>
+          <li>Use eco modes; wash at 30–40°C for most loads.</li>
+        </ul>
+      </details>
+
+      <!-- Water advice -->
+      <div class="callout" role="note" aria-label="Water advice note">
+        <strong>Water🌊</strong> · Heat less, waste less: hot water is both water and energy.
+      </div>
+
+      <details class="accordion" open>
+        <summary><h3>Bathing & Showering🚿</h3></summary>
+        <ul class="tips">
+          <li>Shorten showers and use efficient shower heads.</li>
+          <li>Fix dripping taps/shower mixers promptly.</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Kitchen🍽️</h3></summary>
+        <ul class="tips">
+          <li>Use a bowl for washing up; don’t run taps continuously.</li>
+          <li>Only boil the amount of water you need in the kettle.</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Toilets & Leaks🚽</h3></summary>
+        <ul class="tips">
+          <li>Install dual-flush or displacement devices if compatible.</li>
+          <li>Check for silent leaks (dye tablet test in cistern).</li>
+        </ul>
+      </details>
+
+      <details class="accordion">
+        <summary><h3>Garden🐌</h3></summary>
+        <ul class="tips">
+          <li>Collect rainwater; water early or late to reduce evaporation.</li>
+          <li>Choose drought-tolerant plants and mulch beds to retain moisture.</li>
+        </ul>
+      </details>
+
+      <p class="muted" style="margin-top:1rem;">
+        Tip: Use the Devices page to spot the biggest consumers, then apply the relevant actions here.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <small><span id="year"></span> EcoHome Advice</small>
+  </footer>
+
+  <script>
+    // simple year updater
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

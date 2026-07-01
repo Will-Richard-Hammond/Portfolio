@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoHome — Devices</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="data.js"></script>
+  <script defer src="devices.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav aria-label="Primary" class="nav">
+      <h1 class="brand">EcoHome</h1>
+      <ul class="nav-list" role="list">
+        <li><a href="index.html">Dashboard🏠</a></li>
+        <li><a aria-current="page" href="devices.html">Devices📱</a></li>
+        <li><a href="advice.html">Advice🗣️</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="devices-title">
+      <div class="section-head">
+        <h2 id="devices-title">Device Usage📱</h2>
+        <p class="section-sub">Sorted by highest consumption.</p>
+      </div>
+
+      <div class="table-wrap" role="region" aria-label="Device usage table">
+        <table class="table">
+          <caption class="visually-hidden">Per-device weekly energy usage</caption>
+          <thead>
+            <tr>
+              <th scope="col">Device</th>
+              <th scope="col">Usage (kWh)</th>
+            </tr>
+          </thead>
+          <tbody id="deviceTable"></tbody>
+          <tfoot>
+            <tr class="total-row">
+              <th scope="row">Total weekly energy</th>
+              <td id="deviceTotalCell">—</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <small><span id="year"></span> EcoHome Demo</small>
+  </footer>
+</body>
+</html>
