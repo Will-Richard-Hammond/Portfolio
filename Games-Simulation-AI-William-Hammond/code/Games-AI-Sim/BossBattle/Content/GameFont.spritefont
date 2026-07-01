@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file contains an xml description of a font, and will be read by the
+MonoGame Framework Content Pipeline. Follow the comments to customise the
+appearance of the font in your game.
+-->
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+  <Asset Type="Graphics:FontDescription">
+
+    <!--Modify this string to change the font imported.-->
+    <FontName>Arial</FontName>
+
+    <!--
+    Size is a float value, measured in points.
+    36pt Bold matches the TitleScreenState documentation.
+    -->
+    <Size>36</Size>
+
+    <!--Spacing is a float value, measured in pixels.-->
+    <Spacing>0</Spacing>
+
+    <!--UseKerning controls the layout of the font.-->
+    <UseKerning>true</UseKerning>
+
+    <!--Style: Regular, Bold, Italic, or Bold, Italic-->
+    <Style>Bold</Style>
+
+    <!--
+    If you uncomment this line, the default character will be substituted if
+    you draw or measure text that contains characters not included in the font.
+    -->
+    <!-- <DefaultCharacter>*</DefaultCharacter> -->
+
+    <!--
+    CharacterRegions control what letters are available in the font. Every
+    character from Start to End will be built and made available for drawing.
+    The default range covers basic Latin (space to ~).
+    -->
+    <CharacterRegions>
+      <CharacterRegion>
+        <Start>&#32;</Start>
+        <End>&#126;</End>
+      </CharacterRegion>
+    </CharacterRegions>
+
+  </Asset>
+</XnaContent>
